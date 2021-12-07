@@ -1,0 +1,187 @@
+/* ##########################################
+                    # General Styling
+############################### */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  min-height: 100vh;
+
+  background-color: hsl(0, 0%, 95%);
+  display: grid;
+  align-items: end;
+  justify-content: center;
+}
+
+/* ##########################################
+                    # Main Styling
+  ############################### */
+.preview-card {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 300px));
+}
+
+.card-1 {
+  background-color: hsl(31, 77%, 52%);
+  border-top-left-radius: 11px;
+  border-bottom-left-radius: 11px;
+}
+
+.card-2 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+  background-color: hsl(179, 100%, 13%);
+  border-top-right-radius: 11px;
+  border-bottom-right-radius: 11px;
+}
+
+.card-container {
+  display: grid;
+  gap: 3.2rem;
+  justify-items: start;
+  padding: 2.4rem 6rem 4rem 4rem;
+}
+
+.heading-terinary {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+}
+
+.card-text {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.7;
+  padding-bottom: 4rem;
+}
+
+.card-link:link,
+.card-link:visited {
+  text-decoration: none;
+  display: inline-block;
+  font-weight: 500;
+  background-color: hsl(0, 0%, 95%);
+  border: 2px solid #fff;
+  border-radius: 10rem;
+  padding: 1.2rem 2.4rem;
+  transition: all 0.3s;
+}
+
+.card-1 .card-link:link,
+.card-1 .card-link:visited {
+  color: hsl(31, 77%, 52%);
+}
+
+.card-2 .card-link:link,
+.card-2 .card-link:visited {
+  color: hsl(184, 100%, 22%);
+}
+
+.card-3 .card-link:link,
+.card-3 .card-link:visited {
+  color: hsl(179, 100%, 13%);
+}
+
+.card-link:hover,
+.card-link:active {
+  background-color: transparent;
+  color: hsl(0, 0%, 100%, 0.75) !important;
+}
+
+/* ##########################################
+                    # Footer Styling
+############################### */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ##########################################
+                    # Media Quieries
+############################### */
+
+/*#################
+    # (Below: 900px)
+############*/
+@media (max-width: 56.25em) {
+  .preview-card {
+    padding: 0 1.8rem;
+  }
+  .card-container {
+    gap: 2.4rem;
+    padding: 2.4rem 1rem 4rem 3rem;
+  }
+}
+
+/*#################
+    # (Below: 800px)
+############*/
+@media (max-width: 50em) {
+  .preview-card {
+    padding: 4rem 0;
+    grid-template-columns: repeat(1, minmax(auto, 500px));
+  }
+
+  .card-1 {
+    border-radius: 0;
+    border-top-left-radius: 11px;
+    border-top-right-radius: 11px;
+  }
+
+  .card-3 {
+    border-radius: 0;
+    border-bottom-left-radius: 11px;
+    border-bottom-right-radius: 11px;
+  }
+
+  .card-container {
+    gap: 3.2rem;
+    padding: 6rem;
+  }
+}
+
+/*#################
+    # (Below: 500px)
+############*/
+@media (max-width: 31.25em) {
+  .card-container {
+    padding: 6rem 5rem;
+  }
+  .preview-card {
+    padding: 4rem 3rem;
+  }
+
+  .card-text {
+    padding-bottom: 0;
+  }
+}
+
+/*#################
+    # (Below: 375px)
+############*/
+@media (max-width: 23.44em) {
+  .card-container {
+    padding: 6rem 4rem;
+  }
+  .preview-card {
+    padding: 4rem 2rem;
+  }
+}
