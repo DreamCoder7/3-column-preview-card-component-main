@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/3columnpreviewcardcomponentmain-using-css-grid-and-flexbox-pD820fJq-)
 - Live Site URL: [Add live site URL here](https://preview-card-ab.netlify.app/)
 
 ## My process
